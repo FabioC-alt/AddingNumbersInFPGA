@@ -31,3 +31,5 @@ In that tutorial, you will find the IP libraries necessary for this guide, the `
   - [Adding Two Numbers](wiki/tutorial.md#adding-two-numbers)
   - [Adding Negative Numbers](wiki/tutorial.md#adding-negative-numbers)
   - [Adding Arrays of Numbers](wiki/tutorial.md#adding-arrays-of-numbers)
+
+➡️ [Go to the Next Page](wiki/resources.md)
