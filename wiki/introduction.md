@@ -17,3 +17,17 @@ Before starting, it is highly suggested to first follow [this tutorial](https://
 In that tutorial, you will find the IP libraries necessary for this guide, the `.xdc` file required for hardware mapping of the RedPitaya, and the board presets to upload in Vivado.
 
 
+### Table of Contents
+
+- [Introduction](wiki/introduction.md)
+- [Resources](wiki/resources.md)
+  - [.xdc File](wiki/resources.md#xdc-file)
+  - [IP Libraries](wiki/resources.md#ip-libraries)
+- [Important Blocks to Know](wiki/important-blocks-to-know.md)
+  - [AXI GPIO](wiki/important-blocks-to-know.md#axi-gpio)
+  - [DMA](wiki/important-blocks-to-know.md#dma)
+  - [Custom Blocks](wiki/important-blocks-to-know.md#custom-blocks)
+- [Tutorial](wiki/tutorial.md)
+  - [Adding Two Numbers](wiki/tutorial.md#adding-two-numbers)
+  - [Adding Negative Numbers](wiki/tutorial.md#adding-negative-numbers)
+  - [Adding Arrays of Numbers](wiki/tutorial.md#adding-arrays-of-numbers)
