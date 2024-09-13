@@ -46,3 +46,23 @@ but for these tutorials the one necessary is the RedPitaya Clock.
 
 ### Why?
 
+The custom clock module is introduced because the RedPitaya is not fully compatible with the default clock of the Zynq board so it needs to use an other module in order to work on the Vivado environment
+
+
+### Table of Contents
+
+- [Introduction](introduction.md)
+- [Resources](resources.md)
+  - [.xdc File](wiki/resources.md#xdc-file)
+  - [IP Libraries](wiki/resources.md#ip-libraries)
+- [Important Blocks to Know](wiki/important-blocks-to-know.md)
+  - [AXI GPIO](wiki/important-blocks-to-know.md#axi-gpio)
+  - [DMA](wiki/important-blocks-to-know.md#dma)
+  - [Custom Blocks](wiki/important-blocks-to-know.md#custom-blocks)
+- [Tutorial](wiki/tutorial.md)
+  - [Adding Two Numbers](wiki/tutorial.md#adding-two-numbers)
+  - [Adding Negative Numbers](wiki/tutorial.md#adding-negative-numbers)
+  - [Adding Arrays of Numbers](wiki/tutorial.md#adding-arrays-of-numbers)
+
+➡️ [Go to the Next Page](../tutorials/IntroductionToTutorials.md)
+
