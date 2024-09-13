@@ -19,3 +19,6 @@ This repository serves as both a theoretical and practical guide to performing s
 ### Possible improvments and todo list
 - [] Fast Fourier Transform
 - [] Correlation 
+
+➡️ [Go to the Next Page](/wiki/introduction.md)
+

@@ -33,4 +33,4 @@ In that tutorial, you will find the IP libraries necessary for this guide, the `
   - [Adding Negative Numbers](/tutorials/adding-negative-numbers.md)
   - [Adding Arrays of Numbers](/tutorials/adding-arrays-of-numbers.md)
 
-➡️ [Go to the Next Page](wiki/resources.md)
+➡️ [Go to the Next Page](/wiki/resources.md)
