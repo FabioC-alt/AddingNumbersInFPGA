@@ -53,16 +53,18 @@ The custom clock module is introduced because the RedPitaya is not fully compati
 
 - [Introduction](introduction.md)
 - [Resources](resources.md)
-  - [.xdc File](wiki/resources.md#xdc-file)
-  - [IP Libraries](wiki/resources.md#ip-libraries)
-- [Important Blocks to Know](wiki/important-blocks-to-know.md)
-  - [AXI GPIO](wiki/important-blocks-to-know.md#axi-gpio)
-  - [DMA](wiki/important-blocks-to-know.md#dma)
-  - [Custom Blocks](wiki/important-blocks-to-know.md#custom-blocks)
-- [Tutorial](wiki/tutorial.md)
-  - [Adding Two Numbers](wiki/tutorial.md#adding-two-numbers)
-  - [Adding Negative Numbers](wiki/tutorial.md#adding-negative-numbers)
-  - [Adding Arrays of Numbers](wiki/tutorial.md#adding-arrays-of-numbers)
+  - [.xdc File](resources.md#the-xdc-file)
+  - [IP Libraries](resources.md#the-ip-libraries)
+- [Important Blocks to Know](important-blocks-to-know.md)
+  - [AXI GPIO](/wiki/important-blocks-to-know.md#axi-gpio)
+  - [DMA](/wiki/important-blocks-to-know.md#dma)
+  - [Zynq Processing System](/wiki/important-blocks-to-know.md#zynq-processing-system) 
+  - [Custom Blocks](important-blocks-to-know.md#custom-blocks)
+- [Tutorial](/tutorials/IntroductionToTutorials.md)
+  - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
+  - [Adding Negative Numbers](/tutorials/adding-negative-numbers.md)
+  - [Adding Arrays of Numbers](/tutorials/adding-arrays-of-numbers.md)
+
 
 ➡️ [Go to the Next Page](../tutorials/IntroductionToTutorials.md)
 

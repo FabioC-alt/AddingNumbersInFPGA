@@ -41,13 +41,16 @@ Now that we know most of the instruments that we will use let's go test them wit
   - [.xdc File](resources.md#the-xdc-file)
   - [IP Libraries](resources.md#the-ip-libraries)
 - [Important Blocks to Know](important-blocks-to-know.md)
-  - [AXI GPIO](important-blocks-to-know.md#axi-gpio)
-  - [DMA](important-blocks-to-know.md#dma)
+  - [AXI GPIO](/wiki/important-blocks-to-know.md#axi-gpio)
+  - [DMA](/wiki/important-blocks-to-know.md#dma)
+  - [Zynq Processing System](/wiki/important-blocks-to-know.md#zynq-processing-system) 
   - [Custom Blocks](important-blocks-to-know.md#custom-blocks)
-- [Tutorial](tutorial.md)
-  - [Adding Two Numbers](wiki/tutorial.md#adding-two-numbers)
-  - [Adding Negative Numbers](wiki/tutorial.md#adding-negative-numbers)
-  - [Adding Arrays of Numbers](wiki/tutorial.md#adding-arrays-of-numbers)
+- [Tutorial](/tutorials/IntroductionToTutorials.md)
+  - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
+  - [Adding Negative Numbers](/tutorials/adding-negative-numbers.md)
+  - [Adding Arrays of Numbers](/tutorials/adding-arrays-of-numbers.md)
+
+
 
 
 ➡️ [Go to the Next Page](../tutorials/IntroductionToTutorials.md)
