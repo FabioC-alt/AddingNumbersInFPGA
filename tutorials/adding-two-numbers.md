@@ -68,3 +68,107 @@ use IEEE.NUMERIC_STD.ALL;
 **process(clk)**: A process block is a sequential part of the architecture that will be triggered by changes in the clk signal. In this case, the block runs on every rising edge of the clock. rising_edge(clk) checks if there is a rising edge (transition from 0 to 1) on the clock signal clk. This is how the process is synchronized with the clock.
 
 To add this file to the project you can either create a new VHDL file(*Add Source -> Add or create design sources -> Create file*) or import this [file](/tutorials/resources/adderModule.vhdl) (*Add Source -> Add or create design sources -> Add file*)
+
+
+Now let's configure the Axi-GPIO modules, we need to configure both the inputs and the outputs.
+
+First we set the outpus (outputs for us, for the FPGA they will be inputs), we need to configure two channels, in order to send to the FPGA the two number, as you can see in this figure I used two channels of 16-bit:
+
+![Image Alt Text](./images/axiGpioOutputs.png)
+
+Instead the inputs(still, inputs for us, for the FPGA is an output) will be set to a 32-bit:
+
+![Image Alt Text](./images/axiGpioInputs.png)
+
+Now it is possible to automate most of the connection work by clicking the tab "*Run Connection Automation*" and select all of the connections:
+
+![Image Alt Text](./images/runConnectionAutomation.png)
+
+The tab will connect all the possible ports, but we need to modify some of those, first let's disconnect from the AxiGpio modules the rigth ports and delete the created external ports.
+
+In the end the design should look like this:
+![Image Alt Text](./images/designMidle.png)
+
+Now let's connect the Axi GPIO modules correcltly:
+![Image Alt Text](./images/inputsAndOutputs.png)
+
+## Jupyter Notebook
+
+Now we are ready to create the wrapper and generate the bitstream.
+Once the file `.bit`, `.hwh` and `.tcl` (if you want you can find them [here](/tutorials/resources/AddingTwoNumber/)) are on the FPGA, create a Jupyter Notebook.
+
+You can find it [here](/tutorials/resources/AddingTwoNumber/AddingTwoNumber.ipynb).
+
+First things first, so let's initialize the board by resetting it and uploading the bit file:
+
+```
+import pynq
+pynq.PL.reset()
+ol = pynq.Overlay("AddingTwoNumber.bit")
+```
+Then if we want it is possible to check what are the IP Blocks loaded onto the `.bit` file, this may be useful to understand if the IPs were correctly configured and loaded in the design.
+
+```
+help(ol)
+```
+
+In this case the output that we expect contains the two Axi Gpio modules and the Processing System:
+
+```<pynq.overlay.Overlay object>
+    Default documentation for overlay AddingTwoNumber.bit. The following
+    attributes are available on this overlay:
+    
+    IP Blocks
+    ----------
+    axi_gpio_0           : pynq.lib.axigpio.AxiGPIO
+    axi_gpio_1           : pynq.lib.axigpio.AxiGPIO
+    processing_system7_0 : pynq.overlay.DefaultIP
+```
+
+Now let's test it, the first two instruction load into the Axi module two values, 32 and 10 and then we register the result into the variable `result`, the it is possible to print it with the `print` function.
+
+```
+ol.axi_gpio_0.channel1.write(val=10, mask=0xffff)
+ol.axi_gpio_0.channel2.write(val=32, mask=0xffff)
+
+# Assuming 16-bit result
+result = ol.axi_gpio_1.channel1.read()
+
+print(result)
+--------------------------------------------------------------------------------
+42
+```
+
+## Adding Negative Numbers
+
+If we try to insert a negative number inside one of the two `axi_gpio_0` channels, we find that the answer is not correct:
+
+```
+ol.axi_gpio_0.channel1.write(val=10, mask=0xffff)
+ol.axi_gpio_0.channel2.write(val=-32, mask=0xffff)
+
+​
+
+# Assuming 16-bit result
+
+result = ol.axi_gpio_1.channel1.read()
+print(result)
+​-------------------------------------------------------------------------------
+4294967274
+```
+
+In order to obtain the correct answer it is necessary to perform a conversion, which can be easely done adding this `if` statement:
+
+```
+print(result)
+
+# Convert to signed 32-bit integer if necessary
+if result >= 0x80000000:  # 0x80000000 is 2147483648 in decimal, the threshold for negative numbers in 32-bit signed integers
+   result -= 0x100000000  # Subtract 4294967296 to convert to the negative range
+
+print(result)
+--------------------------------------------------------------------------------
+4294967284
+-12
+```
+
