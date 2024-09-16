@@ -60,7 +60,7 @@ The custom clock module is introduced because the RedPitaya is not fully compati
   - [DMA](/wiki/important-blocks-to-know.md#dma)
   - [Zynq Processing System](/wiki/important-blocks-to-know.md#zynq-processing-system) 
   - [Custom Blocks](important-blocks-to-know.md#custom-blocks)
-- [Tutorial](/tutorials/IntroductionToTutorials.md)
+- [Tutorial](/tutorials/Introduction-to-tutorials.md)
   - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
   - [Adding Negative Numbers](/tutorials/adding-negative-numbers.md)
   - [Adding Arrays of Numbers](/tutorials/adding-arrays-of-numbers.md)
