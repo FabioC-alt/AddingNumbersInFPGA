@@ -7,7 +7,7 @@ The block we need to import are:
 
 - Zynq Processing System
 - Processor System Reset
-- 2xAxi GPIO modules
+- 2 x Axi GPIO modules
 
 ![Image Alt Text](./images/AddingTwonumberStartingDesign.png)
 
@@ -171,4 +171,7 @@ print(result)
 4294967284
 -12
 ```
+
+Congratulations! You've completed the first tutorial.
+
 
