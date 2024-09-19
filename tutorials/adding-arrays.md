@@ -11,13 +11,13 @@ Import the following blocks:
 - 2 x Axi DMA 
 - Zynq Processing System
 
-![](/tutorials/resources/AddingTwoArrays/addingArraysInitialDesign.png)
+![](/tutorials/images/AddingTwoArrays/addingArraysInitialDesign.png)
 
 Now we need to add the custom IP to control the RedPitaya clock, you can find it [here](https://github.com/dspsandbox/FPGA-Notes-for-Scientists/tree/main/ip), along with the ADC and DAC.
 
 To import them go to the *Project Manager -> Settings -> IP Repository* and use the "+" tab to add a new repo folder. Now add the RedPitaya clk block and press "*Ctrl+K*" on the input port to the block to create an external connection for the block.
 
-![](/tutorials/resources/AddingTwoArrays/AxiGpioPortsConnections.png)
+![](/tutorials/images/AddingTwoArrays/AxiGpioPortsConnections.png)
 
 Now run the *Run Block Automation* tab.
 
@@ -30,24 +30,38 @@ With this in mind, we'll strategically plan our design to use as few DMAs as pos
 We'll use one DMA to send and receive the data from the FPGA and one only to send the second array.
 
 Configure the first DMA as follow:
-![](/tutorials/resources/AddingTwoArrays/receiveAndSendDma.png)
+![](/tutorials/images/AddingTwoArrays//receiveAndSendDma.png)
 
 Here the configured channels are both the reading and writing ones, instead in the second only the writing channel need to be configured.
 
 And the second one like this:
-![](/tutorials/resources/AddingTwoArrays/sendOnlyDma.png)
+![](/tutorials/images/AddingTwoArrays/sendOnlyDma.png)
 
 Now let's configure the Axi GPIO module, in this project in order to synchronize the DMAs a trigger is needed along with the number of samples which is necessary to communicate to the FPGA the length of the array, to perfom this tasks the Axi GPIO needs to be configured as follow:
 
-![](/tutorials/resources/AddingTwoArrays/summingArraysAxiGpio.png)
+![](/tutorials/images/AddingTwoArrays/summingArraysAxiGpio.png)
 
 The first channel has only 1-bit wire (0 or 1), and it will be the trigger, while the second will be the sample number channel.
 
-Now it run the tab "*Run Connection Automation*" and delete the Axi-GPIO unnecessary connections, in the end the design should look like this:
 
-![](/tutorials/resources/AddingTwoArrays/tabRunAutomation.png)
+The HP0 interface on the Zynq7 needs to be set on. To turn it on double-click on the block and select the *PS-PL Configuration*
 
-Now we need to add the [*stream_control*]() file and the [*stream_adder*]() file.
+![](/tutorials/images/AddingTwoArrays/PS-PLConfig.png)
+
+Now connect the clock and the reset connections:
+
+![](/tutorials/images/AddingTwoArrays/runClockAndReset.png)
+
+
+Now it run the tab "*Run Connection Automation*" and uncheck the Axi-GPIO connections, in the end the design should look like this:
+
+![](/tutorials/images/AddingTwoArrays/runAfterConnection.png)
+
+Now we need to add the [*stream_control*]() file and the [*stream_adder*]() file. And the final design should look like this:
+
+![](/tutorials/images/AddingTwoArrays/finalDesign.png)
+
+The bit file of this project can be found [here]() along withe the tcl and hwh.
 
 
 ### Table of Contents
