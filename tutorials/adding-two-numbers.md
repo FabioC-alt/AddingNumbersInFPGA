@@ -9,7 +9,7 @@ The block we need to import are:
 - Processor System Reset
 - 2 x Axi GPIO modules
 
-![Image Alt Text](./images/AddingTwonumberStartingDesign.png)
+![Image Alt Text](/tutorials/images/AddingTwoNumbers/AddingTwonumberStartingDesign.png)
 
 The first step is to tap the "*Run Block Automation*" tab. The Run Block Automation dialog box lets you provide input about basic features that the microprocessor system requires.
 
