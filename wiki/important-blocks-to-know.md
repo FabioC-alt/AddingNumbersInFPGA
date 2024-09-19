@@ -51,8 +51,5 @@ Now that we know most of the instruments that we will use let's go test them wit
   - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
   - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
 
-
-
-
-➡️ [Go to the Next Page](../tutorials/IntroductionToTutorials.md)
+➡️ [Go to the Next Page](/tutorials/Introduction-to-tutorials.md)
 

@@ -193,4 +193,6 @@ Congratulations! You've completed the first tutorial.
   - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
   - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
 
+➡️ [Go to the Next Page](/tutorials/adding-arrays.md)
+
 

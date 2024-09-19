@@ -67,5 +67,5 @@ The custom clock module is introduced because the RedPitaya is not fully compati
   - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
 
 
-➡️ [Go to the Next Page](../tutorials/IntroductionToTutorials.md)
+➡️ [Go to the Next Page](/wiki/important-blocks-to-know.md)
 

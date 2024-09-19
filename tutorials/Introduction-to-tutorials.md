@@ -20,4 +20,4 @@ The tutorial are mainly based on the knowledge by dspsandbox's tutorials, so if 
   - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
   - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
 
-  ➡️ [Go to the Next Page](/wiki/adding-two-numbers.md)
+➡️ [Go to the Next Page](/tutorials/adding-two-numbers.md)
