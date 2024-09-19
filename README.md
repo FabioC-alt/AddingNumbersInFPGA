@@ -1,7 +1,6 @@
 # Why?
 This repository serves as both a theoretical and practical guide to performing summations in FPGAs, specifically using the RedPitaya 125-14 and Vivado. The goal is to aid in the understanding and implementation of projects that involve this type of problem.
 
-### Table of Contents
 
 ### Table of Contents
 
@@ -18,7 +17,7 @@ This repository serves as both a theoretical and practical guide to performing s
   - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
   - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
   - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
-  
+
 ### Possible improvments and todo list
 - [] Fast Fourier Transform
 - [] Correlation 
