@@ -48,3 +48,20 @@ Now it run the tab "*Run Connection Automation*" and delete the Axi-GPIO unneces
 ![](/tutorials/resources/AddingTwoArrays/tabRunAutomation.png)
 
 Now we need to add the [*stream_control*]() file and the [*stream_adder*]() file.
+
+
+### Table of Contents
+
+- [Introduction](introduction.md)
+- [Resources](resources.md)
+  - [.xdc File](resources.md#the-xdc-file)
+  - [IP Libraries](resources.md#the-ip-libraries)
+- [Important Blocks to Know](important-blocks-to-know.md)
+  - [AXI GPIO](/wiki/important-blocks-to-know.md#axi-gpio)
+  - [DMA](/wiki/important-blocks-to-know.md#dma)
+  - [Zynq Processing System](/wiki/important-blocks-to-know.md#zynq-processing-system) 
+  - [Custom Blocks](important-blocks-to-know.md#custom-blocks)
+- [Tutorial](/tutorials/Introduction-to-tutorials.md)
+  - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
+  - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
+  - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)

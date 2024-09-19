@@ -35,6 +35,7 @@ The Processing System IP Wrapper acts as a logic connection between the PS and t
 It is also possible to configure customs block using VHDL or Verilog, in the case of this tutorial we will use VHDL, but they are quite similar.
 
 Now that we know most of the instruments that we will use let's go test them with the tutorials.
+### Table of Contents
 
 - [Introduction](introduction.md)
 - [Resources](resources.md)
@@ -47,8 +48,8 @@ Now that we know most of the instruments that we will use let's go test them wit
   - [Custom Blocks](important-blocks-to-know.md#custom-blocks)
 - [Tutorial](/tutorials/Introduction-to-tutorials.md)
   - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
-  - [Adding Negative Numbers](/tutorials/adding-negative-numbers.md)
-  - [Adding Arrays of Numbers](/tutorials/adding-arrays-of-numbers.md)
+  - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
+  - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
 
 
 

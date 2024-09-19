@@ -49,6 +49,7 @@ but for these tutorials the one necessary is the RedPitaya Clock.
 The custom clock module is introduced because the RedPitaya is not fully compatible with the default clock of the Zynq board so it needs to use an other module in order to work on the Vivado environment
 
 
+
 ### Table of Contents
 
 - [Introduction](introduction.md)
@@ -62,8 +63,8 @@ The custom clock module is introduced because the RedPitaya is not fully compati
   - [Custom Blocks](important-blocks-to-know.md#custom-blocks)
 - [Tutorial](/tutorials/Introduction-to-tutorials.md)
   - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
-  - [Adding Negative Numbers](/tutorials/adding-negative-numbers.md)
-  - [Adding Arrays of Numbers](/tutorials/adding-arrays-of-numbers.md)
+  - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
+  - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
 
 
 ➡️ [Go to the Next Page](../tutorials/IntroductionToTutorials.md)
