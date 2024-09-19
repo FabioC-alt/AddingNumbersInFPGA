@@ -3,19 +3,22 @@ This repository serves as both a theoretical and practical guide to performing s
 
 ### Table of Contents
 
-- [Introduction](wiki/introduction.md)
-- [Resources](wiki/resources.md)
-  - [.xdc File](wiki/resources.md#xdc-file)
-  - [IP Libraries](wiki/resources.md#ip-libraries)
-- [Important Blocks to Know](wiki/important-blocks-to-know.md)
-  - [AXI GPIO](wiki/important-blocks-to-know.md#axi-gpio)
-  - [DMA](wiki/important-blocks-to-know.md#dma)
-  - [Custom Blocks](wiki/important-blocks-to-know.md#custom-blocks)
-- [Tutorial](wiki/tutorial.md)
-  - [Adding Two Numbers](wiki/tutorial.md#adding-two-numbers)
-  - [Adding Negative Numbers](wiki/tutorial.md#adding-negative-numbers)
-  - [Adding Arrays of Numbers](wiki/tutorial.md#adding-arrays-of-numbers)
+### Table of Contents
 
+- [Introduction](introduction.md)
+- [Resources](resources.md)
+  - [.xdc File](resources.md#the-xdc-file)
+  - [IP Libraries](resources.md#the-ip-libraries)
+- [Important Blocks to Know](important-blocks-to-know.md)
+  - [AXI GPIO](/wiki/important-blocks-to-know.md#axi-gpio)
+  - [DMA](/wiki/important-blocks-to-know.md#dma)
+  - [Zynq Processing System](/wiki/important-blocks-to-know.md#zynq-processing-system) 
+  - [Custom Blocks](important-blocks-to-know.md#custom-blocks)
+- [Tutorial](/tutorials/Introduction-to-tutorials.md)
+  - [Adding Two Numbers](/tutorials/adding-two-numbers.md)
+  - [Adding Negative Numbers](/tutorials/adding-two-numbers.md#adding-negative-numbers)
+  - [Adding Arrays of Numbers](/tutorials/adding-arrays.md)
+  
 ### Possible improvments and todo list
 - [] Fast Fourier Transform
 - [] Correlation 
