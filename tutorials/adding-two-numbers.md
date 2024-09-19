@@ -74,23 +74,25 @@ Now let's configure the Axi-GPIO modules, we need to configure both the inputs a
 
 First we set the outpus (outputs for us, for the FPGA they will be inputs), we need to configure two channels, in order to send to the FPGA the two number, as you can see in this figure I used two channels of 16-bit:
 
-![Image Alt Text](./images/axiGpioOutputs.png)
+![Image Alt Text](/tutorials/images/AddingTwoNumbers/axiGpioOutputs.png)
 
 Instead the inputs(still, inputs for us, for the FPGA is an output) will be set to a 32-bit:
 
-![Image Alt Text](./images/axiGpioInputs.png)
+![Image Alt Text](/tutorials/images/AddingTwoNumbers/axiGpioInputs.png)
 
 Now it is possible to automate most of the connection work by clicking the tab "*Run Connection Automation*" and select all of the connections:
 
-![Image Alt Text](./images/runConnectionAutomation.png)
+![Image Alt Text](/tutorials/images/AddingTwoNumbers/runConnectionAutomation.png)
 
 The tab will connect all the possible ports, but we need to modify some of those, first let's disconnect from the AxiGpio modules the rigth ports and delete the created external ports.
 
 In the end the design should look like this:
-![Image Alt Text](./images/designMidle.png)
+
+![Image Alt Text](/tutorials/images/AddingTwoNumbers/designMidle.png)
 
 Now let's connect the Axi GPIO modules correcltly:
-![Image Alt Text](./images/inputsAndOutputs.png)
+
+![Image Alt Text](/tutorials/images/AddingTwoNumbers/inputsAndOutputs.png)
 
 ## Jupyter Notebook
 
