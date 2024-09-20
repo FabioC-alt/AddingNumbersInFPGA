@@ -57,9 +57,11 @@ Now it run the tab "*Run Connection Automation*" and uncheck the Axi-GPIO connec
 
 ![](/tutorials/images/AddingTwoArrays/runAfterConnection.png)
 
-Now we need to add the [*stream_control*]() file and the [*stream_adder*]() file. And the final design should look like this:
+Now we need to add the [*stream_control*](/tutorials/resources/AddingTwoArrays/stream_ctrl.vhd) file and the [*stream_adder*](/tutorials/resources/AddingTwoArrays/stream_adder.vhd) file. And the final design should look like this:
 
 ![](/tutorials/images/AddingTwoArrays/finalDesign.png)
+
+By design this tutorial uses 16-bit width value, but feel free to play with the numbers.
 
 The bit file of this project can be found [here]() along withe the tcl and hwh.
 
