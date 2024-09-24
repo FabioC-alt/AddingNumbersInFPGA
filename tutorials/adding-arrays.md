@@ -63,7 +63,31 @@ Now we need to add the [*stream_control*](/tutorials/resources/AddingTwoArrays/s
 
 By design this tutorial uses 16-bit width value, but feel free to play with the numbers.
 
-The bit file of this project can be found [here]() along withe the tcl and hwh.
+The bit file of this project can be found [here](/tutorials/resources/AddingTwoArrays/summingArrays.bit) along withe the tcl and hwh.
+
+To make it easier to manage this project I wrote a python library that can be found [here](/tutorials/resources/AddingTwoArrays/SummingArrays.py), so you only need to write:
+
+```
+import pynq
+from SummingArrays import SummingArrays
+import numpy as np
+
+# Create an instance of the SummingArrays class
+summing_arrays = SummingArrays("summingArrays.bit")
+
+# Example arrays
+array0 = np.array([1, 2, 3, 4], dtype=np.int16)
+array1 = np.array([5, 6, 7, 8], dtype=np.int16)
+
+# Call the process_arrays method on the instance
+
+result = summing_arrays.process_arrays(array0,array1)
+print(result)
+
+```
+
+and the output should be this: \
+``[ 6  8 10 12]``
 
 
 ### Table of Contents
